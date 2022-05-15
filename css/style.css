@@ -50,8 +50,8 @@ img {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1600px;
-  padding: 0 230px;
+  max-width: 1140px;
+  padding: 0 20px;
 }
 
 .header {
@@ -452,7 +452,7 @@ label.search-form__label:hover svg.search-form__image {
   align-items: center;
   background-image: url("../img/banner-image.png");
   background-repeat: no-repeat;
-  background-position: top left 221px;
+  background-position: top left;
 }
 
 .banner__header {
@@ -460,7 +460,7 @@ label.search-form__label:hover svg.search-form__image {
   margin: 0;
   padding: 0;
   margin-bottom: 91px;
-  margin-right: 101px;
+  margin-right: 76px;
   padding-left: 25px;
   display: flex;
   flex-direction: column;
