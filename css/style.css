@@ -915,6 +915,8 @@ label.search-form__label:hover svg.search-form__image {
 
 .filters__form {
   display: flex;
+  position: absolute;
+  z-index: 200;
 }
 
 .filters__global {
@@ -957,34 +959,44 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .global-list-filter__item {
-  display: none;
-  position: relative;
   margin-bottom: 18px;
+}
+
+.global-list-filter__open-filter {
+  width: 100%;
+  position: relative;
   padding-top: 12px;
   padding-left: 16px;
   padding-bottom: 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #EF5B70;
+  color: #6F6E6E;
   text-transform: uppercase;
+  text-align: left;
+  border: none;
   border-bottom: 1px solid #EBEBEB;
   cursor: pointer;
+  background-color: transparent;
+}
+
+.button-active {
+  color: #EF5B70;
 }
 
 .global-list-filter__item:last-child {
   margin-bottom: 0;
 }
 
-.global-list-filter__item:hover {
+.global-list-filter__open-filter:hover {
   color: rgba(58, 56, 56, 0.86);
 }
 
-.global-list-filter__item:hover::before {
+.global-list-filter__open-filter:hover::before {
   background-color: rgba(58, 56, 56, 0.86);
 }
 
-.global-list-filter__item::before {
+.global-list-filter__open-filter::before {
   content: "";
   position: absolute;
   width: 5px;
@@ -1019,6 +1031,7 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .global-list-filter {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1036,22 +1049,28 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .filters__global_left {
-  position: relative;
-  top: -15px;
-  margin-left: 8px;
+  margin-top: -15px;
+  margin-left: 0px;
   flex-grow: 1;
   width: 360px;
   max-width: 360px;
   padding: 13px 16px;
-  /* background: #FFFFFF; */
-  /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
-  /* z-index: 102; */
-  /* разобраться почему не работает */
+}
+
+.filters__global_left:hover {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filters__global_left:hover .global-list-filter {
+  display: block;
 }
 
 .global-sub-list {
   margin: 0;
   padding: 0;
+  margin-top: 25px;
+  margin-left: 18px;
   list-style: none;
 }
 
@@ -1066,6 +1085,11 @@ label.search-form__label:hover svg.search-form__image {
 
 .global-sub-list__item:last-child {
   margin-bottom: 0;
+}
+
+.global-sub-list__label:hover {
+  color: #E05C6E;
+  cursor: pointer;
 }
 
 .filters-button_close {
