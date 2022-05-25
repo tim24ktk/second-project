@@ -9,10 +9,19 @@ $light-grey: #E8E8E8;
 $middle-light-grey: #E1E1E1;
 $grey: #6F6E6E;
 $middle-grey: #5D5D5D;
+$label-color: #575757;
+$label-input-color: #656565;
 $pink-red:#F16D7F;
 $pink-red-background: #E05C6E;
 $product-background: #F26376;
 $border-color: #FF6A6A;
+$background-cart: #F8F3F4;
+$input-border-color:#EAEAEA;
+$button-border-color: #A4A4A4;
+$input-value-color: #B1B1B1;
+$button-quote-color: #4A4A4A;
+$form-color:#F5F3F3;
+$line-color: #E2E2E2;
 
 /* mixin font-size */
 
@@ -684,8 +693,6 @@ label.search-form__label:hover svg.search-form__image {
         top: 0;
         left: 0;
     }
-
-
 }
 
 .buttons__cart-image_size {
@@ -748,4 +755,295 @@ label.search-form__label:hover svg.search-form__image {
         text-align: center;
         color: $shade-grey;
     }
+}
+
+.shopping_cart {
+    padding-top: 59px;
+    padding-bottom: 60px;
+    background-color: $background-cart;
+
+    &__header {
+        @include reset ();
+        @include font-weight-size-height (400, 24px, 29px);
+        color: $pink-red;
+        text-align: left;
+        text-transform: uppercase;
+    }
+}
+
+.shopping {
+    padding-top: 96px;
+    padding-bottom: 129px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.carts {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-list {
+    @include reset ();
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        min-width: 652px;
+        margin-bottom: 40px;
+        display: flex;
+        background-color: $white;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__image {
+        width: 262px;
+        height: 306px;
+        display: block;
+    }
+
+    &__description-wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 31px;
+    }
+
+    &__brand {
+        @include reset ();
+        @include font-weight-size-height (400, 24px, 29px);
+        color: $dark-grey;
+        text-transform: uppercase;
+    }
+
+    &__product {
+        @include reset ();
+        @include font-weight-size-height (400, 24px, 29px);
+        color: $dark-grey;
+        text-transform: uppercase;
+    }
+
+    &__delete-product {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__delete-image {
+        fill: $label-color;
+    }
+}
+
+.cart-list-label {
+    @include reset ();
+    margin-top: 42px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        @include font-weight-size-height (400, 22px, 26px);
+        color: $label-color;
+        margin-bottom: 6px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__product-count {
+        font-family: "Lato", "Arial", sans-serif;
+        padding: 3px;
+        width: 44px;
+        height: 25px;
+        @include font-weight-size-height (400, 18px, 22px);
+        color: $label-input-color;
+        outline: none;
+        border: 1px solid $input-border-color;
+        text-align: center;
+        margin-left: 22px;
+    }
+
+    &__product-count {
+        @include font-weight-size-height (400, 18px, 22px);
+        color: $label-input-color;
+    }
+
+    &__value {
+        color: $label-input-color;
+        text-transform: capitalize;
+    }
+
+    &__value_price {
+        color: $pink-red;
+    }
+
+    &__item_quantity {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.cart-list-buttons {
+    @include reset ();
+    margin-top: 73px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+        padding: 16px 39px;
+        @include font-weight-size-height (300, 14px, 17px);
+        font-family: "Lato", "Arial", sans-serif;
+        text-transform: uppercase;
+        border: 1px solid $button-border-color;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        color: $white;
+        background-color: $label-input-color;
+    }
+}
+
+.order {
+    max-width: 360px;
+    width: 50%;
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        @include reset();
+        margin-bottom: 20px;
+        @include font-weight-size-height (300, 16px, 19px);
+        color: $dark-grey;
+        text-transform: uppercase;
+    }
+
+    &__address {
+        @include reset();
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__address-input {
+        margin-bottom: 20px;
+        color: $input-value-color;
+        font-family: "Lato", "Arial", sans-serif;
+        padding: 13px 17px;
+        border: 1px solid $button-border-color;
+    }
+
+    &__address-input:last-child {
+        margin-bottom: 0;
+    }
+
+    &__address-input::placeholder {
+        color: $dark-grey;
+    }
+
+    &__button-quote {
+        width: fit-content;
+        margin-top: 40px;
+        color: $button-quote-color;
+        font-family: "Lato", "Arial", sans-serif;
+        @include font-weight-size-height (300, 11px, 13px);
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border: 1px solid $button-border-color;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__button-quote:hover {
+        color: $white;
+        background-color: $label-input-color;
+    }
+
+    &__sum {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 57px;
+        padding: 39px 43px 42px 43px;
+        background-color: $form-color;
+    }
+
+    &__sub-total {
+        @include reset();
+        @include font-weight-size-height (400, 11px, 13px);
+        color: $button-quote-color;
+        text-transform: uppercase;
+    }
+
+    &__grand-total {
+        @include reset();
+        margin-top: 12px;
+        margin-bottom: 21px;
+        @include font-weight-size-height (300, 16px, 19px);
+        color: $dark-grey;
+        text-transform: uppercase;
+    }
+
+    &__sub-total-number {
+        margin-left: 10px;
+    }
+
+    &__grand-total-number {
+        margin-left: 10px;
+        margin-bottom: 21px;
+    }
+
+    &__grand-total-number_red {
+        font-weight: 400;
+        color: $pink-red;
+    }
+
+    &__submit {
+        margin-top: 17px;
+        width: 100%;
+        font-family: "Lato", "Arial", sans-serif;
+        @include font-weight-size-height (300, 16px, 19px);
+        color: $white;
+        text-transform: uppercase;
+        padding: 15px 41px;
+        background-color: $pink-red;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__submit:hover {
+        background-color: $label-input-color;
+    }
+}
+
+.line {
+    margin: 0;
+    border: none;
+    /* Убираем границу для браузера Firefox */
+    color: $line-color;
+    /* Цвет линии для остальных браузеров */
+    background-color: $line-color;
+    /* Цвет линии для браузера Firefox и Opera */
+    height: 1px;
+    /* Толщина линии */
+    width: 100%;
 }
