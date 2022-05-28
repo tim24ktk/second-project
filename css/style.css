@@ -510,6 +510,7 @@ label.search-form__label:hover svg.search-form__image {
   max-width: 360px;
   min-height: 260px;
   margin-top: 30px;
+  transition: 0.5s linear;
 }
 
 .offers-list__item:nth-child(1) {
@@ -572,7 +573,7 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .offers-list__item:hover {
-  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .products {
