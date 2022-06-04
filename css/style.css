@@ -1127,9 +1127,15 @@ label.search-form__label:hover svg.search-form__image {
   margin-bottom: 0;
 }
 
-@media (max-width: 991px) {
+/* планшетная версия*/
+
+@media (max-width: 768px) {
   .navigation {
     right: 0;
+  }
+
+  .search-form__input {
+    max-width: 120px;
   }
 
   .banner__container {
@@ -1227,7 +1233,9 @@ label.search-form__label:hover svg.search-form__image {
   }
 }
 
-@media (min-width: 375px) and (max-width: 767px) {
+/* мобильная версия*/
+
+@media (max-width: 480px) {
 
   .container {
     padding: 0 8px;
