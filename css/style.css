@@ -2297,8 +2297,13 @@ label.search-form__label:hover svg.search-form__image {
   }
 
   .banner__header {
+    min-width: auto;
     font-size: 38px;
     line-height: 46px;
+  }
+
+  .banner__header::before {
+    height: 100%;
   }
 
   .banner__small-text {
