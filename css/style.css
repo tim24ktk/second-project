@@ -1565,6 +1565,7 @@ label.search-form__label:hover svg.search-form__image {
   display: none;
   margin: 0;
   padding: 0;
+  margin-top: 16px;
   list-style: none;
 }
 
@@ -1672,6 +1673,25 @@ label.search-form__label:hover svg.search-form__image {
   height: 13px;
   border: 1px solid #EBEBEB;
   left: 0;
+}
+
+
+
+.dropdown-list-label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid #6F6E6E;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.dropdown-list__check:checked~.dropdown-list-label::after {
+  display: block;
 }
 
 .dropdown-list__item {
