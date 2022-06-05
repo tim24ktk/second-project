@@ -167,12 +167,13 @@
                     </button>
                     <ul class="global-list-filter">
                         <li class="global-list-filter__item">
-                            Category
+                            <button class="global-list-filter__open-filter button-active"
+                                type="button">Category</button>
                             <ul class="global-sub-list">
                                 <li class="global-sub-list__item">
                                     <label for="accessories" class="global-sub-list__label">Accessories</label>
                                     <input type="radio" name="accessories" id="accessories"
-                                        class="global-sub-list__check visually-hidden">
+                                        class="global-sub-list__check visually-hidden" checked>
                                 </li>
                                 <li class="global-sub-list__item">
                                     <label for="bags" class="global-sub-list__label">Bags</label>
@@ -227,10 +228,10 @@
                             </ul>
                         </li>
                         <li class="global-list-filter__item">
-                            Brand
+                            <button class="global-list-filter__open-filter" type="button">Brand</button>
                         </li>
                         <li class="global-list-filter__item">
-                            Designer
+                            <button class="global-list-filter__open-filter" type="button">Designer</button>
                         </li>
                     </ul>
                 </fieldset>
@@ -277,7 +278,6 @@
                                     class="dropdown-list__check visually-hidden">
                             </li>
                         </ul>
-
                     </div>
                     <div class="buttons-wrapper">
                         <button class="filters__global-button filter-button" type="button">Price
