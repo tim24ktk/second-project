@@ -606,13 +606,6 @@ label.search-form__label:hover svg.search-form__image {
   column-gap: 30px;
 }
 
-.offers-list__item {
-  width: 100%;
-  max-width: 360px;
-  min-height: 260px;
-  margin-top: 30px;
-}
-
 .offers-list__item:nth-child(1) {
   background-image: url("../img/for-women.jpg");
   background-repeat: no-repeat;
@@ -681,10 +674,6 @@ label.search-form__label:hover svg.search-form__image {
   align-items: center;
   width: 100%;
   min-height: inherit;
-}
-
-.offers-list__item:hover {
-  opacity: 0.6;
 }
 
 .products {
@@ -1731,7 +1720,6 @@ label.search-form__label:hover svg.search-form__image {
   top: 0;
 }
 
-
 .filters__global_left:hover {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -1922,4 +1910,258 @@ label.search-form__label:hover svg.search-form__image {
 
 .add-product:hover .add-product__image {
   fill: #5E5E5E;
+}
+
+.offers-list__item {
+  width: 100%;
+  max-width: 360px;
+  min-height: 260px;
+  margin-top: 30px;
+  transition: 0.5s linear;
+}
+
+.offers-list__item:hover {
+  transform: scale(1.1);
+}
+
+.registration-header {
+  padding-top: 59px;
+  padding-bottom: 60px;
+  background-color: #F8F3F4;
+}
+
+.registration-header__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.registration-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.block-registration__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration-form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.enter-name {
+  max-width: 359px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.enter-name__heading {
+  text-transform: capitalize;
+}
+
+.enter-name__heading,
+.login-details__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.enter-name__input,
+.login-details__input {
+  margin-top: 21px;
+  padding: 13px 17px;
+  border: 1px solid #A4A4A4;
+}
+
+.enter-name__input::placeholder,
+.login-details__input::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.gender {
+  max-width: 359px;
+  margin: 0;
+  padding: 0;
+  margin-top: 31px;
+  border: none;
+}
+
+.gender__label {
+  position: relative;
+  margin-right: 20px;
+  padding-left: 27px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.gender__label:hover {
+  color: #E05C6E;
+  cursor: pointer;
+}
+
+.gender__label:last-child {
+  margin-right: 0;
+}
+
+.gender__label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  border-radius: 50%;
+}
+
+.gender__label:hover::before {
+  border: 1px solid #E05C6E;
+}
+
+.gender__label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background-color: #A4A4A4;
+}
+
+.gender__input:not(:checked)+.gender__label::after {
+  opacity: 0;
+}
+
+.gender__input:checked+.gender__label::after {
+  opacity: 1;
+}
+
+.login-details {
+  max-width: 359px;
+  margin: 0;
+  padding: 0;
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.login-details__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.login-details__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  text-align: left;
+}
+
+.registration-form__button {
+  margin-top: 39px;
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 16px 29px;
+  background: #F16D7F;
+  border: none;
+  cursor: pointer;
+}
+
+.registration-form__button:hover {
+  background: #B1B1B1;
+}
+
+.loyalty-description {
+  width: 55%;
+}
+
+.loyalty-description__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.loyalty-description__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.loyalty-description__list {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style: none;
+}
+
+.loyalty-description__item {
+  margin-bottom: 16px;
+  padding-left: 43px;
+  position: relative;
+}
+
+.loyalty-description__item:last-child {
+  margin-bottom: 0;
+}
+
+.loyalty-description__item::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
 }
