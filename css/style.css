@@ -1446,8 +1446,6 @@ label.search-form__label:hover svg.search-form__image {
 
 .filters__form {
   display: flex;
-  position: absolute;
-  z-index: 200;
 }
 
 .filters__global {
@@ -1580,12 +1578,8 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .filters__global_left {
-  margin-top: -15px;
-  margin-left: 0px;
+  margin-left: 15px;
   flex-grow: 1;
-  width: 360px;
-  max-width: 360px;
-  padding: 13px 16px;
 }
 
 .filters__global_left:hover {
@@ -2164,4 +2158,263 @@ label.search-form__label:hover svg.search-form__image {
   height: 16px;
   background-image: url(../img/check.svg);
   background-repeat: no-repeat;
+}
+
+/* планшетная версия*/
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navigation {
+    right: 0;
+  }
+
+  .search-form__input {
+    max-width: 120px;
+  }
+
+  .banner__container {
+    min-height: 368px;
+    background-position: top left 100px;
+    background-size: contain;
+  }
+
+  .banner__header {
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  .banner__small-text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .offers {
+    padding-top: 0;
+  }
+
+  .offers-list {
+    column-gap: 20px;
+  }
+
+  .offers-list__item {
+    min-height: 168px;
+    margin-top: 20px;
+  }
+
+  .offers-list__item:last-child {
+    min-height: 116px;
+  }
+
+  .products {
+    padding-top: 155px;
+    padding-bottom: 65px;
+  }
+
+  .products-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    margin-top: 57px;
+  }
+
+  .products-list__item {
+    margin-top: 16px;
+    margin-right: 0;
+  }
+
+  .products-list__item_catalog {
+    display: none;
+  }
+
+  .products__button {
+    margin-top: 33px;
+  }
+
+  .services {
+    padding-top: 0;
+    padding-bottom: 65px;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-list__item {
+    width: 100%;
+    margin-top: 48px;
+    padding: 0;
+  }
+
+  .services-list__description {
+    max-width: 315px;
+  }
+
+  .services-list__header {
+    margin-top: 28px;
+  }
+
+  .footer-top {
+    min-height: 613px;
+    padding-top: 64px;
+    padding-bottom: 140px;
+    background-image: url("../img/footer-background-tablet.png");
+  }
+
+  .footer-top__container {
+    flex-direction: column;
+  }
+
+  .form-wrapper {
+    margin-right: 0px;
+  }
+
+  .filters {
+    padding-top: 24px;
+  }
+
+  .filters__global_center {
+    justify-content: flex-end;
+    margin-left: 0;
+  }
+
+  .buttons-wrapper:last-child .filter-button {
+    margin-right: 0;
+  }
+
+  .products_catalog {
+    padding-top: 25px;
+  }
+
+  .products__list_catalog {
+    margin-top: 0;
+  }
+}
+
+/* мобильная версия*/
+
+@media (max-width: 480px) {
+
+  .container {
+    padding: 0 8px;
+  }
+
+  .buttons {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .buttons__account,
+  .buttons__cart {
+    display: none;
+  }
+
+  .banner__container {
+    justify-content: center;
+    background-image: none;
+  }
+
+  .banner__header {
+    min-width: auto;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .banner__header::before {
+    height: 100%;
+  }
+
+  .banner__small-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .offers {
+    padding-top: 32px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .offers-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .offers-list__item {
+    min-height: 247px;
+    margin-top: 32px;
+  }
+
+  .offers-list__item:last-child {
+    max-width: 344px;
+    min-height: 111px;
+  }
+
+  .products {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .products-list {
+    grid-template-columns: 1fr;
+    margin-top: 65px;
+  }
+
+  .footer-top {
+    min-height: 550px;
+    padding-bottom: 110px;
+  }
+
+  .footer-top__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .form-wrapper__header,
+  .form-wrapper__header-subscribe {
+    line-height: 153.2%;
+  }
+
+  .form-wrapper__header {
+    font-size: 14px;
+  }
+
+  .form-wrapper__header-subscribe {
+    font-size: 24px;
+  }
+
+  .form {
+    max-width: 342px;
+  }
+
+  .footer-bottom__container {
+    flex-direction: column;
+  }
+
+  .copyright {
+    order: 2;
+  }
+
+  .footer-bottom {
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+
+  .social-list {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
