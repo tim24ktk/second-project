@@ -1872,7 +1872,7 @@ label.search-form__label:hover svg.search-form__image {
   color: #EF5B70;
 }
 
-.line {
+.line_product {
   border: none;
   /* Убираем границу для браузера Firefox */
   color: #EAEAEA;
@@ -1881,7 +1881,8 @@ label.search-form__label:hover svg.search-form__image {
   /* Цвет линии для браузера Firefox и Opera */
   height: 1px;
   /* Толщина линии */
-  width: 60%;
+  width: 65%;
+  margin: auto;
 }
 
 .add-product {
@@ -2307,6 +2308,46 @@ label.search-form__label:hover svg.search-form__image {
 
   .products__list_catalog {
     margin-top: 0;
+  }
+
+  .slider {
+    min-height: 624px;
+  }
+
+  .product-description__wrapper {
+    top: 0;
+  }
+
+  .line_product {
+    width: 100%;
+  }
+
+  .container_product {
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .products-list_product {
+    margin-top: 0;
+  }
+
+  .products_padding {
+    padding-top: 128px;
+    padding-bottom: 129px;
+  }
+
+  .products-list__item:first-child {
+    order: 2;
+  }
+
+  .products-list__item:nth-child(2) {
+    order: 1;
+  }
+
+  .products-list__item:last-child {
+    display: none;
   }
 }
 
