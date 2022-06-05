@@ -165,75 +165,88 @@
                                 fill="" />
                         </svg>
                     </button>
-                    <ul class="global-list-filter">
-                        <li class="global-list-filter__item">
-                            <button class="global-list-filter__open-filter button-active"
-                                type="button">Category</button>
-                            <ul class="global-sub-list">
-                                <li class="global-sub-list__item">
-                                    <label for="accessories" class="global-sub-list__label">Accessories</label>
-                                    <input type="radio" name="accessories" id="accessories"
-                                        class="global-sub-list__check visually-hidden" checked>
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="bags" class="global-sub-list__label">Bags</label>
-                                    <input type="radio" name="accessories" id="bags"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="denim" class="global-sub-list__label">Denim</label>
-                                    <input type="radio" name="accessories" id="denim"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="hoodies" class="global-sub-list__label">Hoodies & Sweatshirts</label>
-                                    <input type="radio" name="accessories" id="hoodies"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="jackets" class="global-sub-list__label">Jackets & Coats</label>
-                                    <input type="radio" name="accessories" id="jackets"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="polos" class="global-sub-list__label">Polos</label>
-                                    <input type="radio" name="accessories" id="polos"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="shirts" class="global-sub-list__label">Shirts</label>
-                                    <input type="radio" name="accessories" id="shirts"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="shoes" class="global-sub-list__label">Shoes</label>
-                                    <input type="radio" name="accessories" id="shoes"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="sweaters" class="global-sub-list__label">Sweaters & Knits</label>
-                                    <input type="radio" name="accessories" id="sweaters"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="t-shirts" class="global-sub-list__label">T-Shirts</label>
-                                    <input type="radio" name="accessories" id="t-shirts"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                                <li class="global-sub-list__item">
-                                    <label for="tanks" class="global-sub-list__label">Tanks</label>
-                                    <input type="radio" name="accessories" id="tanks"
-                                        class="global-sub-list__check visually-hidden">
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="global-list-filter__item">
-                            <button class="global-list-filter__open-filter" type="button">Brand</button>
-                        </li>
-                        <li class="global-list-filter__item">
-                            <button class="global-list-filter__open-filter" type="button">Designer</button>
-                        </li>
-                    </ul>
+                    <div class="filters__global-wrapper">
+                        <button class="filters__global-button filters__global-button_display filters-button"
+                            type="button">
+                            <span class="filters-button__text filters-button__text_display">Filter</span>
+                            <svg class="filters-button__image filters-button__image_display" width="15" height="10"
+                                viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                                    fill="" />
+                            </svg>
+                        </button>
+                        <ul class="global-list-filter">
+                            <li class="global-list-filter__item">
+                                <button class="global-list-filter__open-filter button-active"
+                                    type="button">Category</button>
+                                <ul class="global-sub-list">
+                                    <li class="global-sub-list__item">
+                                        <label for="accessories" class="global-sub-list__label">Accessories</label>
+                                        <input type="radio" name="accessories" id="accessories"
+                                            class="global-sub-list__check visually-hidden" checked>
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="bags" class="global-sub-list__label">Bags</label>
+                                        <input type="radio" name="accessories" id="bags"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="denim" class="global-sub-list__label">Denim</label>
+                                        <input type="radio" name="accessories" id="denim"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="hoodies" class="global-sub-list__label">Hoodies &
+                                            Sweatshirts</label>
+                                        <input type="radio" name="accessories" id="hoodies"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="jackets" class="global-sub-list__label">Jackets & Coats</label>
+                                        <input type="radio" name="accessories" id="jackets"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="polos" class="global-sub-list__label">Polos</label>
+                                        <input type="radio" name="accessories" id="polos"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="shirts" class="global-sub-list__label">Shirts</label>
+                                        <input type="radio" name="accessories" id="shirts"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="shoes" class="global-sub-list__label">Shoes</label>
+                                        <input type="radio" name="accessories" id="shoes"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="sweaters" class="global-sub-list__label">Sweaters & Knits</label>
+                                        <input type="radio" name="accessories" id="sweaters"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="t-shirts" class="global-sub-list__label">T-Shirts</label>
+                                        <input type="radio" name="accessories" id="t-shirts"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                    <li class="global-sub-list__item">
+                                        <label for="tanks" class="global-sub-list__label">Tanks</label>
+                                        <input type="radio" name="accessories" id="tanks"
+                                            class="global-sub-list__check visually-hidden">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="global-list-filter__item">
+                                <button class="global-list-filter__open-filter" type="button">Brand</button>
+                            </li>
+                            <li class="global-list-filter__item">
+                                <button class="global-list-filter__open-filter" type="button">Designer</button>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
                 <fieldset class="filters__global filters__global_center">
                     <div class="buttons-wrapper">
