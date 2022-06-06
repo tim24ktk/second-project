@@ -212,7 +212,7 @@ label.search-form__label:hover svg.search-form__image {
 .navigation {
   position: absolute;
   top: 57px;
-  right: -67px;
+  right: 0;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
