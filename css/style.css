@@ -2350,6 +2350,14 @@ label.search-form__label:hover svg.search-form__image {
   .products-list__item:last-child {
     display: none;
   }
+
+  .shopping__wrapper {
+    flex-direction: column;
+  }
+
+  .shopping {
+    padding-top: 59px;
+  }
 }
 
 /* мобильная версия*/
