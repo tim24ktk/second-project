@@ -164,7 +164,8 @@
                                         Size: <span class="cart-list-label__value">xl</span>
                                     </li>
                                     <li class="cart-list-label__item cart-list-label__item_quantity">
-                                        Quantity: <input class="cart-list-label__product-count" type="text" value="2">
+                                        Quantity: <input class="cart-list-label__product-count" type="number" step="1"
+                                            min="1" value="2">
                                     </li>
                                 </ul>
                                 <button class="cart-list__delete-product" type="button">
@@ -195,7 +196,8 @@
                                         Size: <span class="cart-list-label__value">xl</span>
                                     </li>
                                     <li class="cart-list-label__item">
-                                        Quantity: <input class="cart-list-label__product-count" type="text" value="2">
+                                        Quantity: <input class="cart-list-label__product-count" type="number" step="1"
+                                            min="1" value="2">
                                     </li>
                                 </ul>
                                 <button class="cart-list__delete-product" type="button">
@@ -223,7 +225,7 @@
                     <form class="order__form" action="#" method="post">
                         <h2 class="order__header">Shipping address</h2>
                         <fieldset class="order__address">
-                            <input class="order__address-input" type="text" placeholder="City" value="Bangladesh">
+                            <input class="order__address-input" type="text" placeholder="Bangladesh" value="">
                             <input class="order__address-input" type="text" placeholder="State">
                             <input class="order__address-input" type="text" placeholder="Postcode / Zip">
                         </fieldset>
