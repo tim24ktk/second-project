@@ -945,6 +945,7 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .carts {
+  width: 57.2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,7 +969,6 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .cart-list__item {
-  min-width: 652px;
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,8 +983,8 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .cart-list__image {
-  width: 262px;
-  height: 306px;
+  max-width: 262px;
+  width: 14vw;
   display: block;
 }
 
@@ -998,15 +998,15 @@ label.search-form__label:hover svg.search-form__image {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 22px 31px;
+  padding: 1.4vw 1.5vw;
 }
 
 .cart-list__brand {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.3vw;
+  line-height: 1.3vw;
   color: #222222;
   text-transform: uppercase;
 }
@@ -1015,29 +1015,31 @@ label.search-form__label:hover svg.search-form__image {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.3vw;
+  line-height: 1.3vw;
   color: #222222;
   text-transform: uppercase;
 }
 
 .cart-list__delete-product {
   position: absolute;
-  top: 28px;
-  right: 22px;
+  top: 1.5vw;
+  right: 1vw;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .cart-list__delete-image {
+  width: 18px;
+  height: 18px;
   fill: #575757;
 }
 
 .cart-list-label {
   margin: 0;
   padding: 0;
-  margin-top: 42px;
+  margin-top: 2.4vw;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,8 +1052,8 @@ label.search-form__label:hover svg.search-form__image {
 
 .cart-list-label__item {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.14vw;
+  line-height: 1.4vw;
   color: #575757;
   margin-bottom: 6px;
 }
@@ -1077,8 +1079,8 @@ label.search-form__label:hover svg.search-form__image {
 
 .cart-list-label__product-count {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 0.94vw;
+  line-height: 1vw;
   color: #656565;
 }
 
@@ -1114,7 +1116,7 @@ label.search-form__label:hover svg.search-form__image {
 }
 
 .cart-list-buttons__button {
-  padding: 16px 39px;
+  padding: 16px;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1132,7 +1134,8 @@ label.search-form__label:hover svg.search-form__image {
 
 .order {
   max-width: 360px;
-  width: 50%;
+  width: 42.8%;
+  margin-left: 15px;
 }
 
 .order__form {
@@ -1281,7 +1284,7 @@ label.search-form__label:hover svg.search-form__image {
   line-height: 19px;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 15px 41px;
+  padding: 15px 14px;
   background-color: #F16D7F;
   border: none;
   cursor: pointer;
@@ -2360,15 +2363,15 @@ label.search-form__label:hover svg.search-form__image {
     padding-bottom: 129px;
   }
 
-  .products-list__item:first-child {
+  .products-list__item_product:first-child {
     order: 2;
   }
 
-  .products-list__item:nth-child(2) {
+  .products-list__item_product:nth-child(2) {
     order: 1;
   }
 
-  .products-list__item:last-child {
+  .products-list__item_product:last-child {
     display: none;
   }
 
@@ -2378,6 +2381,93 @@ label.search-form__label:hover svg.search-form__image {
 
   .shopping {
     padding-top: 59px;
+  }
+
+  .shopping__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-list__description-wrapper {
+    padding: 22px 31px;
+  }
+
+  .carts {
+    width: 100%;
+    align-items: center;
+  }
+
+  .cart-list {
+    width: 100%;
+  }
+
+  .cart-list-label {
+    margin-top: 42px;
+  }
+
+  .cart-list__image {
+    width: 262px;
+    height: 306px;
+  }
+
+  .cart-list__brand {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .cart-list__delete-product {
+    top: 28px;
+    right: 24px;
+  }
+
+  .cart-list__product {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .cart-list-label__item {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .cart-list-label__product-count {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .cart-list-buttons {
+    margin-top: 63px;
+    width: 74%;
+  }
+
+  .cart-list-buttons__button {
+    width: 30.6vw;
+  }
+
+  .order {
+    max-width: inherit;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .order__form {
+    margin-top: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .order__address {
+    width: 49%;
+  }
+
+  .order__sum {
+    margin-top: 38px;
+    width: 49%;
+  }
+
+  .order__button-quote {
+    margin-top: 14px;
   }
 }
 
@@ -2439,6 +2529,10 @@ label.search-form__label:hover svg.search-form__image {
 
   .filters__global_left {
     margin-left: 0;
+  }
+
+  .filters__global_center {
+    justify-content: space-between;
   }
 
   .filters-button__text {
@@ -2606,11 +2700,73 @@ label.search-form__label:hover svg.search-form__image {
     display: block;
   }
 
-  .products-list__item:nth-child(2) {
+  .products-list__item_product:nth-child(2) {
     display: none;
   }
 
   .products-list__item:first-child {
     order: 0;
+  }
+
+  .shopping_cart__header {
+    text-align: center;
+  }
+
+  .cart-list__image {
+    width: 144px;
+    height: 188px;
+  }
+
+  .cart-list__description-wrapper {
+    padding: 13px 17px;
+  }
+
+  .cart-list__delete-product {
+    top: 17px;
+    right: 12px;
+  }
+
+  .cart-list__brand,
+  .cart-list__product {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .cart-list-label {
+    margin-top: 26px;
+  }
+
+  .cart-list-label__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cart-list__item {
+    margin-bottom: 32px;
+  }
+
+  .cart-list-buttons {
+    margin-top: 31px;
+    width: 100%;
+  }
+
+  .order__form {
+    flex-direction: column;
+  }
+
+  .cart-list-buttons__button {
+    max-width: 175px;
+    width: 47vw;
+    font-size: 12px;
+    line-height: 14px
+  }
+
+  .order__address,
+  .order__sum {
+    width: 100%;
+  }
+
+  .shopping {
+    padding-bottom: 96px;
   }
 }
