@@ -2119,7 +2119,7 @@ label.search-form__label:hover svg.search-form__image {
 
 .registration-form__button {
   margin-top: 39px;
-  width: 32%;
+  width: 167px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2469,6 +2469,26 @@ label.search-form__label:hover svg.search-form__image {
   .order__button-quote {
     margin-top: 14px;
   }
+
+  .block-registration {
+    padding-top: 40px;
+  }
+
+  .loyalty-description__heading,
+  .loyalty-description__text,
+  .loyalty-description__list {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .loyalty-description {
+    width: 49%;
+  }
+
+  .loyalty-description__heading {
+    margin-bottom: 32px;
+  }
+
 }
 
 /* мобильная версия*/
@@ -2768,5 +2788,23 @@ label.search-form__label:hover svg.search-form__image {
 
   .shopping {
     padding-bottom: 96px;
+  }
+
+  .registration-header__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .block-registration__wrapper {
+    flex-direction: column;
+  }
+
+  .registration-form,
+  .loyalty-description {
+    width: 100%;
+  }
+
+  .loyalty-description {
+    margin-top: 40px;
   }
 }
